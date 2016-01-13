@@ -1,5 +1,7 @@
-<ul>
+<ul class="list-unstyled">
   <% @pets.each do |pet| %>
-    <li><a href='#'><%= pet.name %></a></li>
+    <li><a href="<%= pet_path(pet.id) %>">
+      <%= pet.name %>
+    </a></li>
   <% end %>
 </ul>
